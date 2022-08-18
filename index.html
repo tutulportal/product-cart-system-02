@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Cart Quantity Validation</title>
+    <!-- fontawesome kit -->
+    <script src="https://kit.fontawesome.com/1a0707dab8.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- main -->
+    <main class="main-section">
+        <div class="inner-main">
+            <h1>Latest Products</h1>
+            <div class="products">
+                <!-- Single Product -->
+                <div class="single-product">
+                    <img src="img/shoe.png" alt="">
+                    <h2 class="product-title">Nike Sports</h2>
+                    <p class="product-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptas dolores eos ut</p>
+                    <p class="product-price"><del class="product-price-del">$<span class="price-old">399.99</span></del> $<span class="price-new">190.59</span><span class="small-txt">/pcs</span> <br>$<span class="price-new-total">299.99</span><span class="small-txt">/total</span></p>
+                    <div class="add-cart-part">
+                        <div class="qty-form">
+                            <span class="product-cart-qty-label">Qty</span>
+                            <input class="product-cart-qty-input" type="number" value="1">
+                        </div>
+                        <div class="add-btn">
+                            <button class="product-cart-add-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="single-product">
+                    <img src="img/shoe-2.png" alt="">
+                    <h2 class="product-title">Nike Casual</h2>
+                    <p class="product-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptas dolores eos ut</p>
+                    <p class="product-price"><del class="product-price-del">$<span class="price-old">269.99</span></del> $<span class="price-new">189.99</span><span class="small-txt">/pcs</span> <br>$<span class="price-new-total">299.99</span><span class="small-txt">/total</span></p>
+                    <div class="add-cart-part">
+                        <div class="qty-form">
+                            <span class="product-cart-qty-label">Qty</span>
+                            <input class="product-cart-qty-input" type="number" value="1">
+                        </div>
+                        <div class="add-btn">
+                            <button class="product-cart-add-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Product -->
+                <div class="single-product">
+                    <img src="img/shoe-3.png" alt="">
+                    <h2 class="product-title">Nike Runner</h2>
+                    <p class="product-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil voluptas dolores eos ut</p>
+                    <p class="product-price"><del class="product-price-del">$<span class="price-old">399.99</span></del> $<span class="price-new">299.99</span><span class="small-txt">/pcs</span> <br>$<span class="price-new-total">299.99</span><span class="small-txt">/total</span></p>
+                    <div class="add-cart-part">
+                        <div class="qty-form">
+                            <span class="product-cart-qty-label">Qty</span>
+                            <input class="product-cart-qty-input" type="number" value="1">
+                        </div>
+                        <div class="add-btn">
+                            <button class="product-cart-add-btn">Add To Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="cart-btn"><ion-icon class="cartIconChangeClass" name="bag-handle-outline"></ion-icon><span class="cart-total-added">0</span></button>
+        <div class="cart-bar">
+            <h2>Product Cart</h2>
+            <div class="cart-lists">
+                <div class="single-cart">
+                    <div class="cart-product-img-title">
+                        <img src="img/shoe.png" alt="" class="cart-product-img">
+                        <h4 class="cart-product-title">Nike Sports</h4>
+                    </div>
+                    <div class="cart-product-qty-price">
+                        <span class="title-qty-sub">Qty: </span><input class="qty-input-single-cart" type="number" value="1"> <span class="title-qty-sub">Sub: </span> $<span class="single-product-sub-total-price">190.59</span><span class="single-product-single-price" hidden>190.59</span>
+                    </div>
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+                <div class="single-cart">
+                    <div class="cart-product-img-title">
+                        <img src="img/shoe-3.png" alt="" class="cart-product-img">
+                        <h4 class="cart-product-title">Nike Runner</h4>
+                    </div>
+                    <div class="cart-product-qty-price">
+                        <span class="title-qty-sub">Qty: </span><input class="qty-input-single-cart" type="number" value="1"> <span class="title-qty-sub">Sub: </span> $<span class="single-product-sub-total-price">299.99</span><span class="single-product-single-price" hidden>299.99</span>
+                    </div>
+                    <ion-icon name="close-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="total-cart">
+                <div class="bar-top"></div>
+                <h2>Grand Total: $<span class="grand-total-price-cart">399.99</span></h2>
+                <button class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- ionicon cdn -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js" async></script>
+</body>
+</html>
